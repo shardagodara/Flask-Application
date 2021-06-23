@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    </head>
+<body>
+
+<h2>The method Attribute</h2>
+
+<p>This form will be submitted using the POST method:</p>
+
+<form action="/submit" target="_blank" method="post">
+  <label for="physics">Physics </label>
+  <input type="text" id="physics" name="physics" value="0"><br>
+  <label for="chemistry">chemistry </label>
+  <input type="text" id="chemistry" name="chemistry" value="0"><br>
+  <label for="maths">maths </label>
+  <input type="text" id="maths" name="maths" value="0"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+</body>
+</html>
